@@ -5,7 +5,7 @@
   padding: 1rem 2rem;
   background: $c-background-primary;
   line-height: 2rem;
-  box-shadow: 0 2px 10px;
+  box-shadow: 0 1px 1px $bs-left, 0 3px 3px $bs-right;
   overflow: auto;
   z-index: 1;
 

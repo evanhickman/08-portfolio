@@ -1,0 +1,29 @@
+.hero {
+  position: relative;
+  height: 30vh;
+  background: $c-background-light;
+  box-shadow: 0 1px 1px $bs-left, 0 3px 3px $bs-right;
+
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 70%;
+    transform: translate(-50%, -50%);
+    // background: blue;
+    text-align: center;
+  }
+
+  &__text-title {
+    margin: 0;
+    color: $c-primary;
+    font-size: 3rem;
+  }
+
+  &__text-description {
+    margin: 0.1rem;
+    color: $c-white;
+    font-weight: lighter;
+  }
+}

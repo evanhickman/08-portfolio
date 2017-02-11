@@ -6,34 +6,53 @@ $c-primary: #01579b;
 $c-white: #fff;
 $c-background-primary: #03a9f4;
 $c-background-light: #b3e5fc;
+$bs-left: rgba(0, 0, 0, 0.2);
+$bs-right: rgba(0, 0, 0, 0.15);
 
 @import 'font-awesome';
 @import 'box-sizing';
 @import 'resets';
 @import 'double-container';
 @import 'navbar';
+@import 'hero';
 
-.hero {
-  position: relative;
-  height: 50vh;
-  background: $c-background-light;
+.projects {
+  color: $c-primary;
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
 
-  &__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  &__text-title {
-    margin: 0;
+  &__card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 5rem;
     color: $c-primary;
-    font-size: 3rem;
   }
 
-  &__text-description {
-    margin: 0.5rem;
-    color: $c-white;
+  &__card-item {
+    justify-content: space-between;
+  }
+
+  &__card-title {
+    font-weight: 800;
+  }
+
+  &__card-description {
+    // background: maroon;
+  }
+
+  &__pic {
+    max-height: 50rem;
+    margin-left: 2rem;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin-top: 2rem;
   }
 }
