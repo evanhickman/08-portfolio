@@ -2,6 +2,38 @@
 // @import 'normalize';
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$c-primary: #01579b;
+$c-white: #fff;
+$c-background-primary: #03a9f4;
+$c-background-light: #b3e5fc;
+
 @import 'font-awesome';
 @import 'box-sizing';
-@import 'resets'
+@import 'resets';
+@import 'double-container';
+@import 'navbar';
+
+.hero {
+  position: relative;
+  height: 50vh;
+  background: $c-background-light;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__text-title {
+    margin: 0;
+    color: $c-primary;
+    font-size: 3rem;
+  }
+
+  &__text-description {
+    margin: 0.5rem;
+    color: $c-white;
+  }
+}
