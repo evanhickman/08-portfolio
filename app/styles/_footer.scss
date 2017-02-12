@@ -1,0 +1,22 @@
+.footer__main {
+  width: 100vw;
+  margin: -1rem;
+  padding: 1rem 0;
+  background: $c-background-primary;
+  color: $c-white;
+  text-align: center;
+
+  &-item {
+    margin: 0 1.5rem;
+    vertical-align: middle;
+  }
+
+  a {
+    color: $c-white;
+  }
+}
+
+.logo__pic {
+  width: 3rem;
+  border-radius: 50%;
+}
