@@ -17,3 +17,14 @@ $bs-right: rgba(0, 0, 0, 0.15);
 @import 'hero';
 @import 'projects';
 @import 'footer';
+
+@media (max-width: 600px) {
+
+  .projects {
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
