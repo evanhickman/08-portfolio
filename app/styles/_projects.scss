@@ -1,0 +1,40 @@
+.projects {
+  color: $c-primary;
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+    color: $c-primary;
+  }
+
+  &__card-item {
+    justify-content: space-between;
+  }
+
+  &__card-title {
+    font-weight: 800;
+  }
+
+  &__card-description {
+    // background: maroon;
+  }
+
+  &__pic {
+    max-height: 50rem;
+    margin-left: 2rem;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin-top: 2rem;
+  }
+}
