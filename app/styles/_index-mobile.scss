@@ -1,0 +1,10 @@
+@media (max-width: 600px) {
+
+  .projects {
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

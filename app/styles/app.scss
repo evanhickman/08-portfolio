@@ -6,6 +6,7 @@ $c-primary: #01579b;
 $c-white: #fff;
 $c-background-primary: #03a9f4;
 $c-background-light: #b3e5fc;
+$c-red: #ef5350;
 $bs-left: rgba(0, 0, 0, 0.2);
 $bs-right: rgba(0, 0, 0, 0.15);
 
@@ -17,14 +18,5 @@ $bs-right: rgba(0, 0, 0, 0.15);
 @import 'hero';
 @import 'projects';
 @import 'footer';
-
-@media (max-width: 600px) {
-
-  .projects {
-
-    &__card {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-}
+@import 'index-mobile';
+@import 'blog-style';
