@@ -2,10 +2,11 @@
 // @import 'normalize';
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-$c-primary: #01579b;
+$c-primary: rgb(44, 62, 80);
+$c-primary-overlay: rgba(44, 62, 80, 0.5);
 $c-white: #fff;
-$c-background-primary: #03a9f4;
-$c-background-light: #b3e5fc;
+$c-background-primary: #2c3e50;
+$c-background-light: #2980b9;
 $c-red: #ef5350;
 $bs-left: rgba(0, 0, 0, 0.2);
 $bs-right: rgba(0, 0, 0, 0.15);
@@ -18,5 +19,25 @@ $bs-right: rgba(0, 0, 0, 0.15);
 @import 'hero';
 @import 'projects';
 @import 'footer';
-@import 'index-mobile';
 @import 'blog-style';
+@import 'index-mobile';
+@import 'city-style';
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &-item {
+    margin: 1rem;
+  }
+
+  &-item__vertical {
+
+  }
+
+  &-item__pic {
+    box-shadow: 0 1px 1px $bs-left, 0 3px 3px $bs-right;
+  }
+}
